@@ -1,0 +1,78 @@
+.hero {
+  max-width: $mobile;
+  background-color: $second-background-color;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 118px;
+  text-align: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 400px;
+
+  // Mobile
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero_background_mobile.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero_background_mobile@2x.jpg);
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero_background_tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero/hero_background_tablet@2x.jpg);
+      }
+    }
+  }
+
+  // Desctop
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero_background_desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero/hero_background_desktop@2x.jpg);
+      }
+    }
+  }
+}
+
+.hero__title {
+  color: $main-background-color;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  margin: 0 auto 30px auto;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+  }
+}
