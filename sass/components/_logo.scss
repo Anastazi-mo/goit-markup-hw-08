@@ -8,6 +8,11 @@
 
   &--color {
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 
   @media screen and (max-width: $tablet) {
@@ -32,5 +37,10 @@
 
   &--color {
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
