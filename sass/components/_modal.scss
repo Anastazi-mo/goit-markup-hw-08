@@ -43,7 +43,7 @@
 
   transition: transform 250ms $animation-timing-function;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     & {
       width: 450px;
       height: 609px;
@@ -169,8 +169,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
@@ -180,7 +178,6 @@
   @media screen and (min-width: $tablet) {
     & {
       font-size: 12px;
-      padding-left: 0;
     }
   }
 
@@ -188,6 +185,16 @@
     & {
       font-size: 14px;
     }
+  }
+}
+
+.form__field-check {
+  padding-left: 0px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 14px;
   }
 }
 
