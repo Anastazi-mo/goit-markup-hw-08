@@ -1279,7 +1279,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.form__field:not(:last-child) {
+.form__field {
   margin-bottom: 10px;
 }
 
@@ -1392,8 +1392,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1401,6 +1402,7 @@ img {
 @media screen and (min-width: 768px) {
   .policy {
     font-size: 12px;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
