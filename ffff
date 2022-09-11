@@ -1,2 +1,1 @@
-@import './components/ourProjectsFilter'; @import './components/ourProjectsList'; // Modal @import
-'./components/modal';
+// Modal @import './components/modal';
