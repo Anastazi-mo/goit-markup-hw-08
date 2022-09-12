@@ -2,11 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
     & {
       justify-content: center;
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    & {
+      margin-bottom: 50px;
     }
   }
 }
