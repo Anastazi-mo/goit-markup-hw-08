@@ -17,6 +17,16 @@
   flex-direction: column;
   margin: 15px;
 
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+      & {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     & {
       width: calc((100% - 2 * 30px) / 2);
